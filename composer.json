@@ -20,12 +20,13 @@
     "require": {
         "php": ">=4.0.0",
         "pear/PEAR": ">=1.5.4",
-        "pear/pear_exception": "*"
+        "pear/pear_exception": "*",
+        "pear/pear": "*"
     },
     "autoload": {
-        "classmap": [
-            "Cache/Lite.php"
-        ]
+        "psr-0": {
+            "Cache": "./"
+        }
     },
     "include-path": [
         "./"
